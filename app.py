@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify, Response, send_file
+from flask import Flask, request, jsonify, Response, send_file
 import time
 import json
 import io
@@ -10,7 +10,7 @@ CORS(app)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return "API Online e Operante!"
 
 @app.route('/api/start', methods=['POST'])
 def start():
